@@ -8,6 +8,9 @@
 
     <!-- Linking style.css -->
     <link rel="stylesheet" href="{% static 'style.css' %}">
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
     
     <!-- Other CSS and JavaScript libraries -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
@@ -44,9 +47,10 @@
             <div class="max-width">
                 <div class="home-content">
                     <div class="text-1">Hello, my name is</div>
-                    <div class="text-2">Prakash Shahi</div>
+                    <div class="text-2">Dexter A. Duclayan</div>
                     <div class="text-3">And I'm a <span class="typing"></span></div>
-                    <a href="#">Hire me</a>
+                    <a href="#contact">Hire me</a>
+
                 </div>
             </div>
         </section>
@@ -60,9 +64,10 @@
                         <img src="{% static 'images/DexProfile.jpg' %}" alt="">
                     </div>
                     <div class="column right">
-                        <div class="text">I'm Prakash and I'm a <span class="typing-2"></span></div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut voluptatum eveniet doloremque autem excepturi eaque, sit laboriosam voluptatem nisi delectus. Facere explicabo hic minus accusamus alias fuga nihil dolorum quae. Explicabo illo unde, odio consequatur ipsam possimus veritatis, placeat, ab molestiae velit inventore exercitationem consequuntur blanditiis omnis beatae. Dolor iste excepturi ratione soluta quas culpa voluptatum repudiandae harum non.</p>
-                        <a href="#">Download CV</a>
+                        <div class="text">I'm Dexter and I'm a <span class="typing-2"></span></div>
+                        <p>In my portfolio, I describe myself as a versatile professional, adept at both development and design. With a passion for problem-solving, I thrive in navigating through challenges to deliver innovative solutions. As a developer, designer, and troubleshooter, I bring a holistic approach to every project, ensuring its success from conception to execution.</p>
+                        <a href="/static/pdf/Dexter_Ausejo_Duclayan_RESUME.pdf" download>Download CV</a>
+
                     </div>
                 </div>
             </div>
@@ -77,21 +82,21 @@
                         <div class="box">
                             <i class="fas fa-paint-brush"></i>
                             <div class="text">Web Design</div>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
+                            <p>Crafting visually appealing and user-friendly websites tailored to meet your needs.</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="box">
                             <i class="fas fa-chart-line"></i>
                             <div class="text">Advertising</div>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
+                            <p>Driving engagement through strategic ad campaigns that maximize brand visibility.</p>
                         </div>
                     </div>
                     <div class="card">
                         <div class="box">
                             <i class="fas fa-code"></i>
                             <div class="text">Apps Design</div>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem quia sunt, quasi quo illo enim.</p>
+                            <p>Creating stunning visual assets to communicate your brand message effectively."</p>
                         </div>
                     </div>
                    </div>
@@ -106,8 +111,9 @@
                 <div class="skills-content">
                     <div class="column left">
                         <div class="text">My creative skills & experiences.</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ratione error est recusandae consequatur, iusto illum deleniti quidem impedit, quos quaerat quis minima sequi. Cupiditate recusandae laudantium esse, harum animi aspernatur quisquam et delectus ipsum quam alias quaerat? Quasi hic quidem illum. Ad delectus natus aut hic explicabo minus quod.</p>
+                        <p> I have honed my skills over the past 2 years in HTML, CSS, and JavaScript, allowing me to develop dynamic and responsive web applications. Additionally, I have gained valuable experience in SQL and PHP over the past year, enabling me to design and maintain efficient database-driven websites. My dedication to learning and passion for coding drive me to continuously expand my skill set and deliver high-quality solutions.</p>
                         <a href="#">Read more</a>
+                       
                     </div>
                     <div class="column right">
                         <div class="bars">
@@ -127,7 +133,7 @@
                         <div class="bars">
                             <div class="info">
                                 <span>JavaScript</span>
-                                <span>80%</span>
+                                <span>72%</span>
                             </div>
                             <div class="line js"></div>
                         </div>
@@ -141,7 +147,7 @@
                         <div class="bars">
                             <div class="info">
                                 <span>MySQL</span>
-                                <span>70%</span>
+                                <span>55%</span>
                             </div>
                             <div class="line mysql"></div>
                         </div>
@@ -153,95 +159,90 @@
         <!-- teams section start -->
         <section class="teams" id="teams">
             <div class="max-width">
-                <h2 class="title">My teams</h2>
+                <h2 class="title">Projects</h2>
                 <div class="carousel owl-carousel">
                     <div class="card">
                         <div class="box">
                             <img src="images/profile-1.jpeg" alt="">
-                            <div class="text">Someone name</div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <div class="text">Library System</div>
+                              <p>Developed with Django, a high-level Python web framework. Allows user registration, book borrowing, and tracks due return notifications.
+                        Provides librarian-specific features to add or edit book details, manage user accounts, and monitor library activities. Utilizes Django and
+                        SQLite for development, with HTML, CSS, and JavaScript for front-end design.</p>
+
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="box">
-                            <img src="images/profile-2.jpeg" alt="">
-                            <div class="text">Someone name</div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
+                    
                     <div class="card">
                         <div class="box">
                             <img src="images/profile-3.jpeg" alt="">
-                            <div class="text">Someone name</div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <div class="text">Booking System</div>
+                            <p>Developed a responsive booking system utilizing Bootstrap for front-end design to ensure optimal user experience across various devices.
+                                Implemented Firebase as the backend database for secure and scalable data storage and retrieval.</p>
+        
                         </div>
                     </div>
                     <div class="card">
                         <div class="box">
                             <img src="images/profile-4.jpeg" alt="">
-                            <div class="text">Someone name</div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <div class="text">Capstone Project Food Ordering with dietary recommendation system using OpenAi API</div>
+                            <p>Work-in-progress </p>
+
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="box">
-                            <img src="images/profile-5.jpeg" alt="">
-                            <div class="text">Someone name</div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
+                    
                     </div>
                 </div>
             </div>
         </section>
     
-        <!-- contact section start -->
         <section class="contact" id="contact">
             <div class="max-width">
                 <h2 class="title">Contact me</h2>
                 <div class="contact-content">
                     <div class="column left">
                         <div class="text">Get in Touch</div>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos harum corporis fuga corrupti. Doloribus quis soluta nesciunt veritatis vitae nobis?</p>
+                        <p>Feel free to reach out to me for any inquiries or collaborations. I'm here to help you with your projects and answer any questions you may have. Let's connect and bring your ideas to life!</p>
                         <div class="icons">
                             <div class="row">
                                 <i class="fas fa-user"></i>
                                 <div class="info">
                                     <div class="head">Name</div>
-                                    <div class="sub-title">Prakash Shahi</div>
+                                    <div class="sub-title">Dexter A. Duclayan</div>
                                 </div>
                             </div>
                             <div class="row">
                                 <i class="fas fa-map-marker-alt"></i>
                                 <div class="info">
                                     <div class="head">Address</div>
-                                    <div class="sub-title">Surkhet, Nepal</div>
+                                    <div class="sub-title">Western Bicutan Taguig City</div>
                                 </div>
                             </div>
                             <div class="row">
                                 <i class="fas fa-envelope"></i>
                                 <div class="info">
                                     <div class="head">Email</div>
-                                    <div class="sub-title">abc@gmail.com</div>
+                                    <div class="sub-title"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="column right">
                         <div class="text">Message me</div>
-                        <form action="#">
+                        <form id="contact-form" method="post">
+                            {% csrf_token %}
                             <div class="fields">
                                 <div class="field name">
-                                    <input type="text" placeholder="Name" required>
+                                    <input type="text" name="name" placeholder="Name" required>
                                 </div>
                                 <div class="field email">
-                                    <input type="email" placeholder="Email" required>
+                                    <input type="email" name="email" placeholder="Email" required>
                                 </div>
                             </div>
                             <div class="field">
-                                <input type="text" placeholder="Subject" required>
+                                <input type="text" name="subject" placeholder="Subject" required>
                             </div>
                             <div class="field textarea">
-                                <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                                <textarea name="message" cols="30" rows="10" placeholder="Message.." required></textarea>
                             </div>
                             <div class="button-area">
                                 <button type="submit">Send message</button>
@@ -252,6 +253,9 @@
             </div>
         </section>
 
+    <footer>
+            <span>&copy; 2024 All rights reserved.</span>
+        </footer>
     <!-- JavaScript file -->
     <script src="{% static 'script.js' %}"></script>
 </body>
