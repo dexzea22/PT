@@ -121,7 +121,10 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # Define the directory where static files will be collected during deployment.
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Change 'staticfiles' to your desired directory name
+
+
 
 
 # Default primary key field type
