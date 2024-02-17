@@ -24,10 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-m91)q77#s!spk_&2w#^2dpkf!t6rsah0-9zzn+gr*xxl0!^@qs'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['portfolio-fj0s.onrender.com']
-
+ALLOWED_HOSTS = ['portfolio-2zpl.onrender.com','127.0.0.1']
 
 
 # Application definition
@@ -121,11 +120,9 @@ USE_TZ = True
 # Define the URL prefix for static files.
 STATIC_URL = '/static/'
 
-# Define the directory where static files will be collected during deployment.
-
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Change 'staticfiles' to your desired directory name
-
-
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static')
+]
 
 
 # Default primary key field type
